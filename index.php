@@ -25,6 +25,9 @@ if($_POST){
 <body>
 <div class="container">
 	<div class="row">
+	<div class="page-header">
+		<h1>Crea tu usario.</h1>
+	</div>
 		<div class="col-md-12">
 			<form method="POST" style="width:70%;margin:auto;">
 			  <div class="form-group">
