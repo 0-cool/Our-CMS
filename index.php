@@ -1,6 +1,10 @@
 <?php 
 include('libreria/motor.php');
-error_reporting(0);
+session_start();
+if ($_SESSION['usuario']) {
+	echo "<script>window.location='our/';</script>";
+}
+else{
 if (!mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME)) {
 	echo "<script>window.location='install.php';</script>";
 }
@@ -47,9 +51,11 @@ if($_POST){
 			    <input type="email" name="txtEmail" required class="form-control"  placeholder="Email">
 			  </div>
 			  <button style="width:100%;" type="submit" class="btn btn-primary">Enviar</button>
+			  <label for=""><a href="login.php">Ya tienes cuenta? Inisia Sesion!</a></label>
 		</form>
 		</div>
 	</div>
 </div>
 </body>
 </html>
+<?php } ?>

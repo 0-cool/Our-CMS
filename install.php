@@ -47,15 +47,15 @@ if ($_POST) {
 				<form method="POST" style="width:70%;margin:auto;">
 				  <div class="form-group">
 				    <label for="">Servidor</label>
-				    <input type="text" name="DB_HOST" class="form-control"  placeholder="Ej: localhost">
+				    <input type="text" name="DB_HOST" required  class="form-control"  placeholder="Ej: localhost">
 				  </div>
 				  <div class="form-group">
 				    <label for="">Base de datos</label>
-				    <input type="text" name="DB_NAME" class="form-control"  placeholder="Ej: dbName">
+				    <input type="text" name="DB_NAME" required class="form-control"  placeholder="Ej: dbName">
 				  </div>
 				  <div class="form-group">
 				    <label for="">Usuario</label>
-				    <input type="text" name="DB_USER" class="form-control"  placeholder="Ej: root">
+				    <input type="text" name="DB_USER" required class="form-control"  placeholder="Ej: root">
 				  </div>
 				  <div class="form-group">
 				    <label for="">Contraseña</label>
