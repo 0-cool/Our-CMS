@@ -1,5 +1,9 @@
 <?php 
 include('libreria/motor.php');
+error_reporting(0);
+if (!mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME)) {
+	echo "<script>window.location='install.php';</script>";
+}
 if($_POST){
 	$user = new user;
 
